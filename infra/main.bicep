@@ -52,7 +52,7 @@ param openAiInstances object = {
 param openAiSkuName string = 'S0'
 
 @description('Version of the Chat GPT model.')
-param chatGptModelVersion string = '0613'
+param chatGptModelVersion string = '2024-07-18'
 
 @description('Name of the Chat GPT deployment.')
 param chatGptDeploymentName string = 'chat'
@@ -67,7 +67,7 @@ param embeddingGptModelVersion string = '2'
 param embeddingGptDeploymentName string = 'embedding'
 
 @description('Name of the Chat GPT model.')
-param chatGptModelName string = 'gpt-35-turbo'
+param chatGptModelName string = 'gpt-4o-mini'
 
 @description('The OpenAI endpoints capacity (in thousands of tokens per minute)')
 param deploymentCapacity int = 30
