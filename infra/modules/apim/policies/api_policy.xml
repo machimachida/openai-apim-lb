@@ -29,7 +29,7 @@
                     backends.Add(new JObject()
                     {
                         { "backend-id", "openai-backend-1" },
-                        { "priority", 1},
+                        { "priority", 10},
                         { "isThrottling", false },
                         { "retryAfter", DateTime.MinValue }
                     });
@@ -37,7 +37,7 @@
                     backends.Add(new JObject()
                     {
                         { "backend-id", "openai-backend-2" },
-                        { "priority", 1},
+                        { "priority", 100},
                         { "isThrottling", false },
                         { "retryAfter", DateTime.MinValue }
                     });
@@ -202,5 +202,8 @@
     </outbound>
     <on-error>
         <base />
+
+        <!-- Preserve the original status code from the backend -->
+        <set-status code="@(context.Response.StatusCode)" reason="@(context.Response.StatusReason)" />
     </on-error>
 </policies>
