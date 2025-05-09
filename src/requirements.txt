@@ -1,5 +1,7 @@
 openai
 python-dotenv
+aiohttp
+asyncio
 
 # azure-identity
 # langchain==0.1.5
