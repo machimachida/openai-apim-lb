@@ -70,7 +70,7 @@ param embeddingGptDeploymentName string = 'embedding'
 param chatGptModelName string = 'gpt-4o-mini'
 
 @description('The OpenAI endpoints capacity (in thousands of tokens per minute)')
-param deploymentCapacity int = 30
+param deploymentCapacity int = 1
 
 @description('Tags to be applied to resources.')
 param tags object = { 'azd-env-name': environmentName }
