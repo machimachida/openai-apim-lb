@@ -10,7 +10,7 @@ apim_endpoint = os.getenv("APIM_ENDPOINT")
 apim_subscription_key = os.getenv("APIM_SUBSCRIPTION_KEY")
 
 # リクエストの総数
-TOTAL_REQUESTS = 43
+TOTAL_REQUESTS = 50
 
 # 非同期クライアントの作成
 async_client = AsyncAzureOpenAI(
